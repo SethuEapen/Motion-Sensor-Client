@@ -2,7 +2,6 @@
 import RPi.GPIO as GPIO
 import time
 pir_sensor = 11
-#closed = False;
 NULL_CHAR = chr(0)
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(pir_sensor, GPIO.IN)
@@ -18,13 +17,12 @@ try:
     while True:
         time.sleep(0.1)
         current_state = GPIO.input(pir_sensor)
-        if current_state == 1: #and closed == False:
+        if current_state == 1:
             print("GPIO pin %s is %s" % (pir_sensor, current_state))
             write_report(chr(5)+NULL_CHAR+chr(26)+NULL_CHAR*5)
             write_report(NULL_CHAR*8)
             time.sleep(5)
-            #closed = True
-            #break
+            #break IF YOU WANT TO CLOSE AFTER ONE USE
 except KeyboardInterrupt:
     pass
 finally:
