@@ -1,7 +1,7 @@
 import socket
 
-host = '192.168.1.173'
-port = 5560
+host = '#YOUR SERVER IP HERE'
+port = 5560 #CHANGE PORT IF THIS ONES USED
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((host, port))
