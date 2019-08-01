@@ -1,3 +1,4 @@
+#https://randomnerdtutorials.com/raspberry-pi-zero-usb-keyboard-hid/
 #!/usr/bin/env python3
 import RPi.GPIO as GPIO
 import time
