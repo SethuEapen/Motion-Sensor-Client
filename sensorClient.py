@@ -2,8 +2,8 @@ import socket
 import time
 import RPi.GPIO as GPIO
 
-host = '192.168.1.173'
-port = 5560
+host = '#ENTER SERVER IP ADDRESS HERE'
+port = 5560 #YOU CAN CHANGE PORT IF THIS ONE IS USED UP
 
 pir_sensor = 11
 
